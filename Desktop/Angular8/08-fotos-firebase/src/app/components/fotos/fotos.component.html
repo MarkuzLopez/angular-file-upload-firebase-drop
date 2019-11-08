@@ -1,0 +1,9 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let item of items | async">
+      <img [src]="item.url" class="card-img-top" [alt]="item.nombre">
+      <div class="card-body">
+        <h5 class="card-title">{{item.nombre}}</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+</div>
